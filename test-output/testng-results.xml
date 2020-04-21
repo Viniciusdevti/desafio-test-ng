@@ -2,44 +2,23 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-18T19:29:31Z" name="Default suite" finished-at="2020-04-18T19:29:40Z" duration-ms="9174">
+  <suite started-at="2020-04-21T18:50:27Z" name="Default suite" finished-at="2020-04-21T18:51:06Z" duration-ms="38042">
     <groups>
     </groups>
-    <test started-at="2020-04-18T19:29:31Z" name="Default test" finished-at="2020-04-18T19:29:40Z" duration-ms="9174">
-      <class name="com.thiago.teste.GuruTestRegister">
-        <test-method signature="loginSucesso()[pri:0, instance:com.thiago.teste.GuruTestRegister@1e9804b9]" started-at="2020-04-18T19:29:31Z" name="loginSucesso" finished-at="2020-04-18T19:29:40Z" duration-ms="8765" status="FAIL">
+    <test started-at="2020-04-21T18:50:27Z" name="Default test" finished-at="2020-04-21T18:51:06Z" duration-ms="38042">
+      <class name="com.vinicius.teste.BbbVotaçaoTest">
+        <test-method signature="idSucess()[pri:0, instance:com.vinicius.teste.BbbVotaçaoTest@77a281fc]" started-at="2020-04-21T18:50:28Z" name="idSucess" finished-at="2020-04-21T18:51:05Z" duration-ms="37687" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Nao foi possivel encontrar o elemento para preencher: Proxy element for: DefaultElementLocator 'By.name: name'. Pagina: Register: Mercury Tours
- no such element: Unable to locate element: {"method":"name","selector":"name"}
-  (Session info: chrome=81.0.4044.92)
-  (Driver info: chromedriver=2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881),platform=Linux 5.3.0-46-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'vinicius-Aspire-ES1-572', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.3.0-46-generic', java.version: '11.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528139 (47ead77cb35ad2..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 81.0.4044.92, webStorageEnabled: true}
-Session ID: 2fca3fabae28ed6fcb9e63f8d6458630
-*** Element info: {Using=name, value=name}]]>
+              <![CDATA[Tempo excedido para aguardar elemento: Proxy element for: DefaultElementLocator 'By.className: gc__3_EfD']]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Nao foi possivel encontrar o elemento para preencher: Proxy element for: DefaultElementLocator 'By.name: name'. Pagina: Register: Mercury Tours
- no such element: Unable to locate element: {"method":"name","selector":"name"}
-  (Session info: chrome=81.0.4044.92)
-  (Driver info: chromedriver=2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881),platform=Linux 5.3.0-46-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'vinicius-Aspire-ES1-572', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.3.0-46-generic', java.version: '11.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528139 (47ead77cb35ad2..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 81.0.4044.92, webStorageEnabled: true}
-Session ID: 2fca3fabae28ed6fcb9e63f8d6458630
-*** Element info: {Using=name, value=name}
+              <![CDATA[java.lang.AssertionError: Tempo excedido para aguardar elemento: Proxy element for: DefaultElementLocator 'By.className: gc__3_EfD'
 at org.testng.Assert.fail(Assert.java:96)
-at com.thiago.core.CorePage.preencherCampo(CorePage.java:56)
-at com.thiago.page.PageRegister.contactInformation(PageRegister.java:69)
-at com.thiago.teste.GuruTestRegister.loginSucesso(GuruTestRegister.java:17)
+at com.vinicius.core.CorePage.aguardarElementoVisivel(CorePage.java:117)
+at com.vinicius.core.CorePage.click(CorePage.java:62)
+at com.vinicius.page.Bbb.realizarVoto(Bbb.java:33)
+at com.vinicius.teste.BbbVotaçaoTest.idSucess(BbbVotaçaoTest.java:19)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -70,8 +49,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginSucesso -->
-      </class> <!-- com.thiago.teste.GuruTestRegister -->
+        </test-method> <!-- idSucess -->
+      </class> <!-- com.vinicius.teste.BbbVotaçaoTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
