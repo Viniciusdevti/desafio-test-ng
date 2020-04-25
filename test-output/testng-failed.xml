@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vinicius.teste.BbbVotaçaoTest">
+      <class name="com.vinicius.teste.GuruToMoveTest">
         <methods>
-          <include name="idSucess"/>
+          <include name="ToMove"/>
         </methods>
-      </class> <!-- com.vinicius.teste.BbbVotaçaoTest -->
+      </class> <!-- com.vinicius.teste.GuruToMoveTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

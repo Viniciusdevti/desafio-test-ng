@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.vinicius.teste.BbbVotaçaoTest" class="method navigator-link" hash-for-method="idSucess">idSucess</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.vinicius.teste.GuruToMoveTest" class="method navigator-link" hash-for-method="ToMove">ToMove</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,20 +120,17 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.vinicius.teste.BbbVotaçaoTest</span>
+              <span class="class-name">com.vinicius.teste.GuruToMoveTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="idSucess">
-                  </a> <!-- idSucess -->
-                  <span class="method-name">idSucess</span>
-                  <div class="stack-trace">java.lang.AssertionError: Tempo excedido para aguardar elemento: Proxy element for: DefaultElementLocator &apos;By.className: gc__3_EfD&apos;
-	at org.testng.Assert.fail(Assert.java:96)
-	at com.vinicius.core.CorePage.aguardarElementoVisivel(CorePage.java:117)
-	at com.vinicius.core.CorePage.click(CorePage.java:62)
-	at com.vinicius.page.Bbb.realizarVoto(Bbb.java:33)
-	at com.vinicius.teste.BbbVotaçaoTest.idSucess(BbbVotaçaoTest.java:19)
+                  <a name="ToMove">
+                  </a> <!-- ToMove -->
+                  <span class="method-name">ToMove</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.vinicius.core.CorePage.openPage(CorePage.java:43)
+	at com.vinicius.teste.GuruToMoveTest.ToMove(GuruToMoveTest.java:13)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -168,7 +165,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse--129330065/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse--1950661570/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -177,7 +174,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.vinicius.teste.BbbVotaçaoTest&quot;/&gt;
+      &lt;class name=&quot;com.vinicius.teste.GuruToMoveTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -219,14 +216,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'idSucess')
-data.setCell(0, 2, 'com.vinicius.teste.BbbVotaçaoTest')
-data.setCell(0, 3, 37687);
+data.setCell(0, 1, 'ToMove')
+data.setCell(0, 2, 'com.vinicius.teste.GuruToMoveTest')
+data.setCell(0, 3, 11242);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -252,11 +249,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.vinicius.teste.BbbVotaçaoTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.vinicius.teste.GuruToMoveTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">idSucess</span>
+                <span class="method-name">ToMove</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
